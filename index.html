@@ -104,7 +104,7 @@
 		<div class="container">
 			<section class="portfolio">
 				<h1>Meet The Team</h1>
-				<div class="owl-carousel owl-theme">			       
+				<div class="owl-team owl-carousel owl-theme">			       
 		            <div class="our-team">
 		                <div class="pic">
 		                    <img src="img/team-1.jpg">
@@ -253,48 +253,39 @@
 		<div class="container">
 			<section class="portfolio">
 				<h1>Testimonials</h1>
-				<div class="owl-carousel owl-theme">
-			        <div class="col-md-12">
-			            <div class="our-team">
-			                <div class="pic">
-			                    <p><em>"This is an incredible salon. I couldn't be happier with the quality of service and products and I would definitely recommend it!"</em></p>
-			                </div>
-			                <div class="team-content">
-			                    <h3 class="title">Williamson</h3>			                    
-			                </div>
-			            </div>
-			        </div>
-			        <div class="col-md-12">
-			            <div class="our-team">
-			                <div class="pic">
-			                    <p><em>"This is an incredible salon. I couldn't be happier with the quality of service and products and I would definitely recommend it!"</em></p>
-			                </div>
-			                <div class="team-content">
-			                    <h3 class="title">Trish</h3>			                    
-			                </div>
-			            </div>
-			        </div>
-			        <div class="col-md-12">
-			            <div class="our-team">
-			                <div class="pic">
-			                    <p><em>"This is an incredible salon. I couldn't be happier with the quality of service and products and I would definitely recommend it!"</em></p>
-			                </div>
-			                <div class="team-content">
-			                    <h3 class="title">Caroline</h3>			                    
-			                </div>
-			            </div>
-			        </div>
-			        <div class="col-md-12">
-			            <div class="our-team">
-			                <div class="pic">
-			                    <p><em>"This is an incredible salon. I couldn't be happier with the quality of service and products and I would definitely recommend it!"</em></p>
-			                </div>
-			                <div class="team-content">
-			                    <h3 class="title">Rebecca</h3>			                    
-			                </div>
-			            </div>
-			        </div>
-			        
+				<div class="owl-testimonials owl-carousel owl-theme">		        
+		            <div class="testimonials">
+		                <div class="pic">
+		                    <p><em>"This is an incredible salon. I couldn't be happier with the quality of service and products and I would definitely recommend it!"</em></p>
+		                </div>
+		                <div class="team-content">
+		                    <h3 class="title">Williamson</h3>			                    
+		                </div>
+		            </div>			        			      
+		            <div class="testimonials">
+		                <div class="pic">
+		                    <p><em>"This is an incredible salon. I couldn't be happier with the quality of service and products and I would definitely recommend it!"</em></p>
+		                </div>
+		                <div class="team-content">
+		                    <h3 class="title">Trish</h3>			                    
+		                </div>
+		            </div>		       			        
+		            <div class="testimonials">
+		                <div class="pic">
+		                    <p><em>"This is an incredible salon. I couldn't be happier with the quality of service and products and I would definitely recommend it!"</em></p>
+		                </div>
+		                <div class="team-content">
+		                    <h3 class="title">Caroline</h3>			                    
+		                </div>
+		            </div>			        		       
+		            <div class="testimonials">
+		                <div class="pic">
+		                    <p><em>"This is an incredible salon. I couldn't be happier with the quality of service and products and I would definitely recommend it!"</em></p>
+		                </div>
+		                <div class="team-content">
+		                    <h3 class="title">Rebecca</h3>			                    
+		                </div>
+		            </div>			      			        
 			    </div>
 		    </section>
 		</div>
@@ -426,23 +417,43 @@
 	<!-- Carousel -->
 	<script src="C:\Users\Igor\Desktop\Igor\Java\MyProjects\Portfolio Revamp - PHP - Website 2 (Salon Template 4)\OwlCarousel2-2.3.4\docs\assets\vendors\jquery.min.js"></script>
 	<script src="C:\Users\Igor\Desktop\Igor\Java\MyProjects\Portfolio Revamp - PHP - Website 2 (Salon Template 4)\OwlCarousel2-2.3.4\dist\owl.carousel.js"></script>
+
 	<script type="text/javascript">
-		$('.owl-carousel').owlCarousel({
-		    loop:true,
-		    margin:10,
-		    nav:true,
-		    responsive:{
-		        0:{
-		            items:1
-		        },
-		        600:{
-		            items:3
-		        },
-		        1000:{
-		            items:5
-		        }
-		    }
-		})
+		$(document).ready(function(){
+			$('.owl-team').owlCarousel({
+			    loop:true,
+			    margin:10,
+			    nav:true,
+			    responsive:{
+			        0:{
+			            items:1
+			        },
+			        600:{
+			            items:3
+			        },
+			        1000:{
+			            items:4
+			        }
+			    }
+			});
+
+			$('.owl-testimonials').owlCarousel({
+			    loop:true,
+			    margin:10,
+			    nav:true,
+			    responsive:{
+			        0:{
+			            items:1
+			        },
+			        600:{
+			            items:1
+			        },
+			        1000:{
+			            items:1
+			        }
+			    }
+			});
+	})
 	</script>
 
 	<script>

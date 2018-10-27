@@ -647,6 +647,23 @@ footer {
     .our-team{ margin-bottom: 30px; }
 }
 
+/*Testimonials*/
+
+.testimonials{
+    text-align: center;    
+    transition: all 0.5s ease 0s;
+}
+
+.testimonials .title{
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    margin-top: 2px;
+    color: #333;
+}
+
 
 /*Carousel Slider*/
 
