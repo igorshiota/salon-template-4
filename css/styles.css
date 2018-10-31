@@ -139,7 +139,7 @@ p:last-of-type {
 
 .main-title span {
 	font-weight: 300;
-	display: none;
+	display: block;
 	font-size: .6em;
 	color: #ffffff;
 }
