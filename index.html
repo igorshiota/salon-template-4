@@ -10,7 +10,7 @@
 	
 	<!-- below is my own css and js -->
 	<link rel="stylesheet" href="C:\Users\Igor\Desktop\Igor\Java\MyProjects\Portfolio Revamp - PHP - Website 2 (Salon Template 4)\css\styles.css">
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 
 	<!-- below is for the carousel -->
 	<link rel="stylesheet" href="C:\Users\Igor\Desktop\Igor\Java\MyProjects\Portfolio Revamp - PHP - Website 2 (Salon Template 4)\OwlCarousel2-2.3.4\dist\assets\owl.carousel.css">
@@ -26,7 +26,7 @@
 				<li><a href="#about">About</a></li>
 				<li><a href="#team">Meet the Team</a></li>
 				<li><a href="#services">Services</a></li>
-				<li><a href="#services">Gallery</a></li>
+				<li><a href="#gallery">Gallery</a></li>
 				<li><a href="#contact">Contact</a></li>
 				<li><a href="#" class="fa fa-facebook"></a></li>
 				<li><a href="#" class="fa fa-twitter"></a></li>
@@ -57,8 +57,8 @@
 
 		<!-- About Us -->
 		<div class="container">
-			<section class="portfolio"><a name="services"></a> 
-				<h4>Trendy and Classic Barbershop</h4>
+			<section class="portfolio">
+				<h4 id="about">Trendy and Classic Barbershop</h4>
 				<h1>About Us</h1>
 				<p>With over 20 years of experience, we recognize the importance of internationalization for company growth. Approximately 25% of our clients have an international presence.</p>
 				<p>Menz Salon is a classical male grooming and traditional Barber shop. Providing a comprehensive menu of traditional and contemporary services towards men’s hair, beards, hot towel shaves, facials, and body treatments. A classic Barber Shop offering grooming services and products in the true sense</p>			
@@ -70,7 +70,7 @@
 		<div class="container" style="padding: .5em 0;">
 			<section class="portfolio">
 				<div class="col-services">
-					<h1>Our Services</h1>
+					<h1 id="services">Our Services</h1>
 					<h4 style="color: #d19d64;"><strong><em>Get the look you always wanted</em></strong></h4>
 					<ul class="special-services-list">
 						<li><i class="fa fa-cut" style="color: #d19d64;"></i>Zip Cut</li>
@@ -103,11 +103,11 @@
 		<!-- Meet the Team -->
 		<div class="container">
 			<section class="portfolio">
-				<h1>Meet The Team</h1>
+				<h1 id="team">Meet The Team</h1>
 				<div class="owl-team owl-carousel owl-theme">			       
 		            <div class="our-team">
 		                <div class="pic">
-		                    <img src="img/team-1.jpg">
+		                    <img src="img/team-1.jpg" alt="team-1">
 		                    <ul class="social">
 		                    	<p class="team-p">This is a profile bio. This is supposed to be a couple of paragraphs about the stylist, their expertises, etc. Not very long, 3 or 4 lines should be sufficient.</p>		                    
 		                    </ul>
@@ -119,7 +119,7 @@
 		            </div>			       			        
 		            <div class="our-team">
 		                <div class="pic">
-		                    <img src="img/team-2.jpg">
+		                    <img src="img/team-2.jpg" alt="team-2">
 		                    <ul class="social">
 		                    	<p class="team-p">This is a profile bio. This is supposed to be a couple of paragraphs about the stylist, their expertises, etc. Not very long, 3 or 4 lines should be sufficient.</p>		                       
 		                    </ul>
@@ -131,7 +131,7 @@
 		            </div>			       			      
 		            <div class="our-team">
 		                <div class="pic">
-		                    <img src="img/team-3.jpg">
+		                    <img src="img/team-3.jpg" alt="team-3">
 		                    <ul class="social">
 		                    	<p class="team-p">This is a profile bio. This is supposed to be a couple of paragraphs about the stylist, their expertises, etc. Not very long, 3 or 4 lines should be sufficient.</p>
 		                    </ul>
@@ -148,8 +148,8 @@
 
 		<!-- Prices -->
 		<div class="container">
-			<section class="portfolio"><a name="services"></a> 
-					<h1>Services & Prices</h1>
+			<section class="portfolio"> 
+					<h1 id="prices">Services & Prices</h1>
     				<div id="accordion">
 					  <div class="card">
 					    <div class="card-header" id="headingOne">
@@ -201,7 +201,7 @@
 
 		<!-- Before and Prices -->
 		<div class="container">
-			<section class="portfolio"><a name="services"></a> 
+			<section class="portfolio"> 
 				<h1>Client's Before & After</h1>
 				<div class="col-services">
 					<figure class="cd-image-container">
@@ -304,8 +304,8 @@
 
 	
 	<!-- Gallery -->
-	<section class="portfolio"><a name="portfolio"></a> 
-		<h1>Gallery</h1>
+	<section class="portfolio">
+		<h1 id="gallery">Gallery</h1>
 		
 			<!-- portfolio item 01 -->
 			<figure class="port-item">
@@ -364,23 +364,19 @@
 	<!-- End Gallery -->
 
 	<!-- Contact -->
-	<section class="cta"><a name="contact"></a> 
+	<section class="cta"> 
 		<div class="container">
-			<h1 class="title-cta">Like what you see?
+			<h1 class="title-cta" id="contact">Like what you see?
 				<span>Then what are you waiting for?</span>
 			</h1>
-				<form action="">
-					<label for="name"></label>
-					<input type="text" placeholder="Your name"><br>
-					<label for="email"></label>
-					<input type="text" placeholder="Your email"><br>
-					<label for="phone"></label>
-					<input type="text" placeholder="Your phone"><br>
-					<label for="message"></label><br>
-					<textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+				<form action="#">					
+					<input type="text" placeholder="Your name"><br>					
+					<input type="text" placeholder="Your email"><br>					
+					<input type="text" placeholder="Your phone"><br>					
+					<textarea name="#" id="#" cols="30" rows="10" placeholder="Your message"></textarea>
 				</form>
-			<a href="" class="button button-dark">Send Message!</a> <strong>or</strong>
-			<a href="" class="button button-dark">Call Us Now!</a>
+			<a href="#" class="button button-dark">Send Message!</a> <strong>or</strong>
+			<a href="#" class="button button-dark">Call Us Now!</a>
 		</div>
 	</section>	
 	<!-- End Contact -->
@@ -418,7 +414,7 @@
 	<script src="C:\Users\Igor\Desktop\Igor\Java\MyProjects\Portfolio Revamp - PHP - Website 2 (Salon Template 4)\OwlCarousel2-2.3.4\docs\assets\vendors\jquery.min.js"></script>
 	<script src="C:\Users\Igor\Desktop\Igor\Java\MyProjects\Portfolio Revamp - PHP - Website 2 (Salon Template 4)\OwlCarousel2-2.3.4\dist\owl.carousel.js"></script>
 
-	<script type="text/javascript">
+	<script>
 		$(document).ready(function(){
 			$('.owl-team').owlCarousel({
 			    loop:true,
