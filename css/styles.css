@@ -10,7 +10,6 @@ body {
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
 	background: #ffffff;
-	color: #ffffff;
 }
 
 img {
@@ -345,10 +344,6 @@ nav a:focus {
 @media (min-width: 60rem) {
 	.logo {
 		max-width: 10em;
-	}
-
-	nav {
-		background-color: #ffffff2e;
 	}
 
 	nav li {
@@ -717,6 +712,7 @@ background: #428bca;
 	background-color:#333;
 	border: 0.5px solid #d19d64;
 	border-radius: 20px;
+	color: #ffffff;
 }
 
 /* Image Comparison */
